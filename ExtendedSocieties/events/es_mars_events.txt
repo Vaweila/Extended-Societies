@@ -1,0 +1,412 @@
+###########################################
+#                                         #
+# ES Legion of Mars Society Events        #
+#                                         #
+# ID ES.100-ES.199		             	  #
+#                                         #
+###########################################
+
+namespace = ES
+
+###JOINING###
+
+#From on_character_ask_to_join_society
+character_event = {
+    id = ES.100
+	hide_window = yes
+    is_triggered_only = yes
+	
+    trigger = {
+    	FROM = { leader = { society_member_of = legion_of_mars } }
+    }
+    immediate = {
+    	FROM = { leader = { character_event = { id = ES.101 } } }
+    }
+}
+
+#Ping event
+character_event = {
+    id = ES.101
+	hide_window = yes
+    is_triggered_only = yes
+	
+    immediate = {
+    	FROM = { letter_event = { id = ES.102 } }
+    }
+}
+
+#Welcome letter
+letter_event = {
+    id = ES.102
+    desc = EVTDESC_ES_102
+    
+	#border = GFX_event_letter_frame_religion
+
+    is_triggered_only = yes
+	
+	immediate = {
+		set_character_flag = society_join_block
+	}
+
+    option = {
+        name = EVTOPTA_ES_102
+
+		join_society = legion_of_mars
+		
+		clr_character_flag = society_join_block
+    }
+}
+
+###Train
+character_event = {
+	id = ES.110
+	desc = EVTDESC_ES_110
+
+	picture = GFX_evt_melee
+	border = GFX_event_normal_frame_war
+	
+	is_triggered_only = yes
+	
+	option = { # Train against straw man
+		name = EVTOPTA_ES_110
+		
+		set_character_flag = legion_of_mars_in_training
+		add_character_modifier = {
+					modifier = train_decision_cooldown_timer
+					years = 3
+					hidden = yes
+				}
+		character_event = { id = ES.111 months = 3 tooltip = EVTTOOLTIPA_ES_110 }
+	}
+
+	option = { # Train against friend
+		name = EVTOPTB_ES_110
+		
+		trigger = {
+			any_friend = {
+				war = no
+				in_command = no
+				prisoner = no
+				is_inaccessible_trigger = no
+			}
+		}
+		
+		# Brings friends portrait into option
+		# No event with friends yet
+		random_friend = {
+			limit = {
+				war = no
+				in_command = no
+				prisoner = no
+				is_inaccessible_trigger = no
+			}
+		}
+
+		set_character_flag = legion_of_mars_in_training
+		add_character_modifier = {
+					modifier = train_decision_cooldown_timer
+					years = 3
+					hidden = yes
+				}
+		character_event = { id = ES.121 months = 3 tooltip = EVTTOOLTIPB_ES_110 }
+	}
+	
+	option = { # Train against fierce warrior
+		name = EVTOPTC_ES_110
+		
+		trigger = {
+			any_courtier = {
+				martial = 15
+			}
+		}
+		
+		# Brings courtier portrait into option
+		# No events with warrior yet
+		any_courtier = {
+			martial = 15
+		}
+		
+		set_character_flag = legion_of_mars_in_training
+		add_character_modifier = {
+					modifier = train_decision_cooldown_timer
+					years = 3
+					hidden = yes
+				}
+		character_event = { id = ES.131 months = 4 tooltip = EVTTOOLTIPC_ES_110 }
+	}
+	
+	option = { # Not train
+		name = EVTOPTD_ES_110
+	}
+	
+	after = {
+		clr_character_flag = legion_of_mars_in_training
+	}
+}
+
+# Train against straw man - ping event
+character_event = {
+	id = ES.111
+	hide_window = yes
+	
+	is_triggered_only = yes
+	trigger = { is_alive = yes }
+	
+	immediate = {
+		random_list = {
+			50 = { # Failed to learn anything
+				character_event = { id = ES.112 }
+			}
+			50 = { # Trained
+				character_event = { id = ES.113 }
+			}
+		}
+	}
+}
+
+# Train against straw man - Failed
+character_event = {
+	id = ES.112
+	
+	desc = EVTDESC_ES_112_A
+	desc = EVTDESC_ES_112_B
+
+	#picture = GFX_evt_experiment
+	#border = GFX_event_normal_frame_religion
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = EVTOPT_ES_112
+	}
+}
+
+# Train against straw man - Trained
+character_event = {
+	id = ES.113
+	
+	desc = EVTDESC_ES_113_A
+	desc = EVTDESC_ES_113_B
+
+	picture = GFX_evt_longbowman_muslim
+	border = GFX_event_normal_frame_war
+	
+	is_triggered_only = yes
+	
+	immediate = {
+		add_character_modifier = {
+			modifier = es_trained
+			years = 1
+		}
+	}
+	
+	option = {
+		name = EVTOPT_ES_113
+	}
+}
+
+# Train against friend - Ping Event
+character_event = {
+	id = ES.121
+	
+	hide_window = yes
+	is_triggered_only = yes
+	trigger = { is_alive = yes }
+	
+	immediate = {
+		random_list = {
+			10 = { # Failed to learn anything
+			
+				character_event = { id = ES.112 }
+			}
+			55 = { # Trained
+				
+			
+				character_event = { id = ES.113 }
+			}
+			5 = { # Wounded you
+			
+			
+				character_event = { id = ES.123 }
+			}
+			1 = { # Killed you
+			
+			
+				character_event = { id = ES.125 }
+			}
+			29 = { # Increased martial
+			
+			
+				character_event = { id = ES.127 }
+			}
+		}
+	}
+}
+
+# Train - Hurt you
+character_event = {
+	id = ES.123
+	
+	desc = EVTDESC_ES_123_A
+	desc = EVTDESC_ES_123_B
+
+	picture = GFX_evt_experiment
+	border = GFX_event_normal_frame_war
+	
+	is_triggered_only = yes
+	
+	immediate = {
+		add_trait = wounded
+	}
+	
+	option = {
+		name = EVTOPT_ES_123
+	}
+}
+
+# Train against friend - Hurt Friend (NOT USED)
+#character_event = {
+#	id = ES.124
+#	
+#	desc = EVTDESC_ES_124
+#
+#	picture = GFX_evt_experiment
+#	border = GFX_event_normal_frame_religion
+#	
+#	is_triggered_only = yes
+#	
+#	option = { name = OK }
+#}
+
+# Train - Killed you
+character_event = {
+	id = ES.125
+	
+	desc = EVTDESC_ES_125_A
+	desc = EVTDESC_ES_125_B
+
+	#TODO
+	picture = GFX_evt_experiment
+	border = GFX_event_normal_frame_war
+	
+	is_triggered_only = yes
+	
+	immediate = {
+		death = { death_reason = death_accident }
+	}
+	
+	option = {
+		name = EVTOPT_ES_125
+	}
+}
+
+# Train against friend - Killed Friend (NOT USED)
+#character_event = {
+#	id = ES.126
+#	
+#	desc = EVTDESC_ES_126
+#
+#	picture = GFX_evt_experiment
+#	border = GFX_event_normal_frame_religion
+#	
+#	is_triggered_only = yes
+#	
+#	option = { name = OK }
+#}
+
+# Train - Increased Martial
+character_event = {
+	id = ES.127
+	
+	desc = EVTDESC_ES_127
+
+	#TODO
+	picture = GFX_evt_experiment
+	border = GFX_event_normal_frame_war
+	
+	is_triggered_only = yes
+	
+	immediate = {
+		change_martial = 1
+		random = {
+			chance = 15
+			change_martial = 1
+		}
+	}
+	
+	option = {
+		name = EVTOPT_ES_127
+	}
+}
+
+### Train against fierce warrior
+# Train against warrior - Ping Event
+character_event = {
+	id = ES.131
+	
+	hide_window = yes
+	is_triggered_only = yes
+	trigger = { is_alive = yes } # Needed?
+	
+	immediate = {
+		random_list = {
+			5 = { # Failed to learn anything
+			
+				character_event = { id = ES.112 }
+			}
+			35 = { # Trained
+				
+			
+				character_event = { id = ES.113 }
+			}
+			20 = { # Wounded you
+			
+			
+				character_event = { id = ES.123 }
+			}
+			5 = { # Killed you
+			
+			
+				character_event = { id = ES.125 }
+			}
+			35 = { # Increased martial
+			
+			
+				character_event = { id = ES.127 }
+			}
+		}
+	}
+}
+
+# Train - Random events
+# Wounded while training
+character_event = {
+	id = ES.1000
+	
+	hide_window = yes
+	
+	trigger = {
+		has_character_flag = legion_of_mars_in_training
+	}
+	
+	mean_time_to_happen = {
+		months = 120
+		
+		modifier = {
+			factor = 0.5 # Double Chance
+			OR = {
+				trait = possessed
+				trait = wroth
+				trait = lunatic
+			}
+		}
+		modifier = {
+			factor = 2 # Half Chance
+			trait = craven
+		}
+	}
+	
+	immediate = {
+		character_event = { id = ES.123}
+	}
+}

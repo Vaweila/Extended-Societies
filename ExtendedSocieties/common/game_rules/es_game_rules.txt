@@ -1,0 +1,26 @@
+# Game Rules for Extended Societies
+extended_societies = {
+	name = "RULE_EXTENDED_SOCIETIES"
+	#dlc = "Monks And Mystics"
+	group = "RULE_GROUP_EXTENDED_SOCIETIES"
+	option = {
+		name = extended
+		text = "RULE_EXTENDED_SOCIETIES_EXTENDED"
+		desc = "RULE_EXTENDED_SOCIETIES_EXTENDED_DESC"
+	}
+	option = {
+		name = supernatural
+		text = "RULE_EXTENDED_SOCIETIES_SUPERNATURAL"
+		desc = "RULE_EXTENDED_SOCIETIES_SUPERNATURAL_DESC"
+	}
+	option = {
+		name = off
+		text = "RULE_EXTENDED_SOCIETIES_OFF"
+		desc = "RULE_EXTENDED_SOCIETIES_OFF_DESC"
+	}
+	option = {
+		name = historical
+		text = "RULE_EXTENDED_SOCIETIES_HISTORICAL"
+		desc = "RULE_EXTENDED_SOCIETIES_HISTORICAL_DESC"
+	}
+}

@@ -1,0 +1,8 @@
+spriteTypes = {
+
+	spriteType = {
+		name = "GFX_evt_longbowman_muslim"
+		texturefile = "gfx\\event_pictures\Longbowman_muslim.dds"
+		allwaystransparent = yes
+	}
+}

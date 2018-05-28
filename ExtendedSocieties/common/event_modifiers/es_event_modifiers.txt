@@ -1,0 +1,22 @@
+# Character Modifiers
+
+# Trained (Character)
+es_trained = {
+	health = 0.5
+	combat_rating = 1
+	sex_appeal_opinion = 20
+	icon = 1
+}
+
+# WarParade (Province)
+es_war_parade = {
+	local_revolt_risk = -15
+	
+	levy_size = 15
+	garrison_size = 15
+	levy_reinforce_rate = 50
+}
+
+# Timers
+train_decision_cooldown_timer = { icon = 1 }
+war_parade_cooldown_timer = { icon = 1 } #NotUsed

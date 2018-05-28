@@ -1,0 +1,224 @@
+###LEGION OF MARS###
+legion_of_mars = {
+	primary_attribute = martial
+	is_secret = no
+	devil_worshipper = no
+	opinion_to_other_members = +5
+	opinion_per_rank_above = +5
+	sound = legion_of_mars_interface
+	
+	active = {
+		#has_dlc = "Mystics"
+	}
+	
+	# Will be destructed when the roman empire is created
+	indestructible = no
+	
+	can_join_society = {
+		hidden_trigger = {
+			NAND = {
+				ai = yes
+				is_society_rank_full = { 
+					society = legion_of_mars
+					rank = 1
+				}
+			}
+			NOT = { has_character_flag = society_join_block }
+		}
+		
+		martial = 8
+		age = 16
+		NOT = {
+			age = 45
+		}
+		OR = {
+			culture_group = byzantine
+			top_liege = {
+				has_landed_title = e_byzantium
+			}
+			333 = { # Roma
+				NOT = {
+					distance = { value = 150 who = PREV }
+				}
+			}
+		}
+	}
+
+	show_society = {
+		martial = 6
+		age = 14
+		OR = {
+			culture_group = byzantine
+			top_liege = {
+				has_landed_title = e_byzantium
+			}
+			333 = { # Roma
+				NOT = {
+					distance = { value = 150 who = PREV }
+				}
+			}
+		}
+	}
+	
+	potential = {
+		age = 16
+	}
+	
+	society_rank = {
+		level = 1
+		limit = 50
+		startup_limit = 10
+		decisions = {
+			legion_of_mars_train # Lets you train for increase of martial ability up to base 8
+		}
+	}
+	
+	society_rank = {
+		level = 2
+		limit = 15
+		startup_limit = 5
+		modifier = { 
+			martial = 1
+		}
+		decisions = {
+			legion_of_mars_war_parade # TBD
+			legion_of_mars_train_battle_maneuver #TBD
+		}
+	}
+
+	society_rank = {
+		level = 3
+		limit = 3
+		startup_limit = 1
+		modifier = { 
+			martial = 2
+			combat_rating = 1
+		}
+		decisions = {
+			legion_of_mars_hire_legion #TBD
+			#legion_of_mars_craft_weapon #TBD
+		}
+	}
+	
+	society_rank = {
+		level = 4
+		limit = 1
+		startup_limit = 1
+		modifier = { 
+			martial = 3
+			combat_rating = 2
+		}
+		decisions = {
+			legion_of_mars_fabricate_claim #TBD
+		}
+	}
+	
+	plots = {
+	}
+	
+	monthly_currency_gain = {
+		name = currency_name_legion_of_mars
+		
+		per_attribute = {
+    		name = martial
+    		value = 0.5
+    	}
+		has_trait = {
+			value = 2
+			trait = skilled_tactican
+		}
+		has_trait = {
+			value = 1
+			trait = brilliant_strategist
+		}
+		has_trait = {
+			value = 1
+			trait = genius
+		}
+		has_trait = {
+			value = 0.5
+			trait = quick
+		}
+		society_rank = {
+			rank = 3
+			value = 5
+		}
+		society_rank = {
+			rank = 4
+			value = 10
+		}
+	}
+
+	member_score_per_attribute = 3
+	member_score_per_rank = 100
+
+	member_score = {
+		value = 10
+		
+		
+		modifier = {
+			factor = 5
+			is_landed = yes
+		}
+		modifier = {
+			factor = 0.5
+			trait = misguided_warrior
+		}
+		modifier = {
+			factor = 1
+			trait = though_soldier
+		}
+		modifier = {
+			factor = 1.5
+			trait = skilled_tactican
+		}
+		modifier = {
+			factor = 2
+			trait = brilliant_strategist
+		}
+		modifier = {
+			factor = 5
+			trait = born_in_the_purple
+		}
+		modifier = {
+			factor = 3
+			trait = fair
+		}
+		modifier = {
+			factor = 3
+			trait = genius
+		}
+		modifier = {
+			factor = 2
+			trait = quick
+		}
+		modifier = {
+			factor = 3
+			trait = strong
+		}
+		modifier = {
+			factor = 1.5
+			trait = brave
+		}
+	}
+	
+	startup_populate = {
+	    trigger = {
+			ai = yes
+			age = 16
+			martial = 8
+			is_in_society = no
+			is_dumb_trigger = no
+			OR = {
+				is_landed = yes
+				martial = 12
+			}
+			OR = {
+				culture_group = byzantine
+				de_jure_liege = e_byzantium
+				#de_facto_liege = e_byzantium
+				#has_landed_title = e_byzantium
+			}
+		}
+	}
+}

@@ -1,0 +1,103 @@
+#Legion of Mars decisions
+
+decisions = {
+	#Train - 
+	legion_of_mars_train = {
+		icon = GFX_ancestor_worship
+	
+		potential = {
+			society_member_of = legion_of_mars
+		}
+		
+		allow = {
+			prisoner = no
+			is_incapable = no
+			custom_tooltip = {
+				text = train_decision_cooldown_timer_tt
+				hidden_trigger = {
+					NOT = {
+						has_character_modifier = train_decision_cooldown_timer
+					}
+				}
+			}
+		}
+		
+		effect = {
+			custom_tooltip = {
+				text = train_decision_effect_tt
+				character_event = { id = ES.110 }
+			}
+		}
+		
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0.001 # Slow down
+			}
+		}
+	}	
+	
+	legion_of_mars_train_battle_maneuver = {
+		potential = {
+			society_member_of = legion_of_mars
+			society_rank == 2
+		}
+	}
+	
+	legion_of_mars_hire_legion = {
+		potential = {
+			society_member_of = legion_of_mars
+			society_rank == 3
+		}
+	}
+	
+	legion_of_mars_fabricate_claim = {
+		potential = {
+			society_member_of = legion_of_mars
+			society_rank == 4
+		}
+	}
+}
+
+settlement_decisions = {
+	legion_of_mars_war_parade = {
+		filter = owned
+		ai_target_filter = owned
+	
+		from_potential = {
+			society_member_of = legion_of_mars
+			society_rank == 2
+			is_incapable = no
+		}
+		
+		potential = {
+			is_capital = yes
+		}
+		
+		allow = {
+			#Doesn't work, don't know
+			FROM = {
+				change_society_currency = 250
+				scaled_wealth = { value = 0.1 min = 5 max = 50 }
+			}
+		}
+		
+		effect = {
+			change_society_currency = -250
+			scaled_wealth = { value = -0.1 min = 5 max = 50 }
+			location = {
+				add_province_modifier = {
+					name = es_war_parade
+					duration = 2
+				}
+			}
+		}
+		
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0.001 # Slow down
+			}
+		}
+	}
+}

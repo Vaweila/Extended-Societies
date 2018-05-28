@@ -1,0 +1,100 @@
+#CODE;ENGLISH;FRENCH;GERMAN;;SPANISH;;;;;;;;;x
+legion_of_mars;Legion of Mars;Legion of Mars;Mars' Legion;;Mars' Legion;;;;;;;;;x
+legion_of_mars_desc;Members of the Legion of Mars follow the principles of the Imperial Roman Empire. The administration and maintenance of an army is the most important task every member follows. The ultimate goal of the legion is to restore the Roman Empire.;Members of the Legion of Mars follow the principles of the Imperial Roman Empire. The administration and maintenance of an army is the most important task every member follows. The ultimate goal of the legion is to restore the Roman Empire.;Members of the Legion of Mars follow the principles of the Imperial Roman Empire. The administration and maintenance of an army is the most important task every member follows. The ultimate goal of the legion is to restore the Roman Empire.;;Members of the Legion of Mars follow the principles of the Imperial Roman Empire. The administration and maintenance of an army is the most important task every member follows. The ultimate goal of the legion is to restore the Roman Empire.;;;;;;;;;x
+legion_of_mars_rank_1_male;Munifex;Munifex;Munifex;;Munifex;;;;;;;;;x
+legion_of_mars_rank_1_female;Munifex;Munifex;Munifex;;Munifex;;;;;;;;;x
+legion_of_mars_rank_2_male;Decanus;Decanus;Decanus;;Decanus;;;;;;;;;x
+legion_of_mars_rank_2_female;Decanus;Decanus;Decanus;;Decanus;;;;;;;;;x
+legion_of_mars_rank_3_male;Centurion;Centurion;Centurion;;Centurion;;;;;;;;;x
+legion_of_mars_rank_3_female;Centurion;Centurion;Centurion;;Centurion;;;;;;;;;x
+legion_of_mars_rank_4_male;Imperator;Imperator;Imperator;;Imperator;;;;;;;;;x
+legion_of_mars_rank_4_female;Imperator;Imperator;Imperator;;Imperator;;;;;;;;;x
+legion_of_mars_leader_desc;Imperator;Imperator;Imperator;;Imperator;;;;;;;;;x
+legion_of_mars_train;Train;Train;Trainieren;Trainieren;;;;;;;;;;x
+legion_of_mars_train_power_desc;Enables you to train to increase your battle strength.;;;;;;;;;;;;;x
+legion_of_mars_war_parade;Hold War Parade;;;;;;;;;;;;;x
+legion_of_mars_war_parade_power_desc;Enables you to hold a war parade to demonstrate your realms might and increase it's prestige.;;;;;;;;;;;;;x
+legion_of_mars_train_battle_maneuver;Train Battle Maneuver;;;;;;;;;;;;;x
+legion_of_mars_train_battle_maneuver_power_desc;Enables you to train battle maneuvers and gain knowledge on battle tactics.;;;;;;;;;;;;;x
+legion_of_mars_hire_legion;Hire Legion;;;;;;;;;;;;;x
+legion_of_mars_hire_legion_power_desc;Enables you to hire a 1500 man strong legion army aiding you in battle.;;;;;;;;;;;;;x
+legion_of_mars_craft_weapon;Craft Weapon;;;;;;;;;;;;;x
+legion_of_mars_craft_weapon_power_desc;Enables you to craft a weapon by yourself.;;;;;;;;;;;;;x
+legion_of_mars_fabricate_claim;Fabricate Claim;;;;;;;;;;;;;x
+legion_of_mars_fabricate_claim_power_desc;Enables you to fabricate a claim on the capital cities of the Roman Empire.;;;;;;;;;;;;;x
+EVTDESC_ES_102;Hello guy!;Oui Oui;HALLO MENSCH;;;;;;;;;;;x
+EVTOPTA_ES_102;EVTOPTA_ES_102;EVTOPTA_ES_102;EVTOPTA_ES_102;;EVTOPTA_ES_102;;;;;;;;;x
+currency_name_legion_of_mars;Ancient Honor;FRENCH;Antike Ehre;;SPANISH;;;;;;;;;x
+
+# Game Rules
+RULE_EXTENDED_SOCIETIES;Extended Societies;Erweiterte Gesellschaften;Extended Societies;;Extended Societies;;;;;;;;;x
+RULE_GROUP_EXTENDED_SOCIETIES;Extended Societies;Erweiterte Gesellschaften;Extended Societies;;Extended Societies;;;;;;;;;x
+RULE_EXTENDED_SOCIETIES_OFF;Off;Aus;Off;;Off;;;;;;;;;x
+RULE_EXTENDED_SOCIETIES_OFF_DESC;There will be no additional societies.;Legion of Mars;Mars' Legion;;Mars' Legion;;;;;;;;;x
+RULE_EXTENDED_SOCIETIES_HISTORICAL;Historical;Legion of Mars;Mars' Legion;;Mars' Legion;;;;;;;;;x
+RULE_EXTENDED_SOCIETIES_HISTORICAL_DESC;Historical societies will be playable.;Legion of Mars;Mars' Legion;;Mars' Legion;;;;;;;;;x
+RULE_EXTENDED_SOCIETIES_EXTENDED;Extended;Legion of Mars;Mars' Legion;;Mars' Legion;;;;;;;;;x
+RULE_EXTENDED_SOCIETIES_EXTENDED_DESC;Historical and fictional societies will be playable.;Legion of Mars;Mars' Legion;;Mars' Legion;;;;;;;;;x
+RULE_EXTENDED_SOCIETIES_SUPERNATURAL;Supernatural;Legion of Mars;Mars' Legion;;Mars' Legion;;;;;;;;;x
+RULE_EXTENDED_SOCIETIES_SUPERNATURAL_DESC;All additional societies will be playable, even supernatural societies which you never dreamed of.;Legion of Mars;Mars' Legion;;Mars' Legion;;;;;;;;;x
+
+# Train
+legion_of_mars_train_desc;Gather your equipment and start to train. A body like this has to maintained to be ready for a nearing war.;FRENCH;GERMAN;;SPANISH;;;;;;;;;x
+train_decision_cooldown_timer_tt;Can only train once every §Y3§! years\n;FRENCH;GERMAN;;SPANISH;;;;;;;;;x
+train_decision_effect_tt;Begin with your training.;FRENCH;GERMAN;;SPANISH;;;;;;;;;x
+
+EVTDESC_ES_110;I have my armor and my weapons ready for training, but with whom should i train with?;FRENCH;GERMAN;;SPANISH;;;;;;;;;x
+EVTOPTA_ES_110;I'll train with a straw man, just to be safe.;FRENCH;GERMAN;;SPANISH;;;;;;;;;x
+EVTTOOLTIPA_ES_110;You will train with a mere straw man. No real challenge, but also no threat of hurting yourself.;FRENCH;GERMAN;;SPANISH;;;;;;;;;x
+EVTOPTB_ES_110;I'll train with a friend.;FRENCH;GERMAN;;SPANISH;;;;;;;;;x
+EVTTOOLTIPB_ES_110;You will train with a good friend of yours.;FRENCH;GERMAN;;SPANISH;;;;;;;;;x
+EVTOPTC_ES_110;I shall train with the most fiercest warrior of my realm!;FRENCH;GERMAN;;SPANISH;;;;;;;;;x
+EVTTOOLTIPC_ES_110;You will train with the most fiercest warrior of your realm.;FRENCH;GERMAN;;SPANISH;;;;;;;;;x
+EVTOPTD_ES_110;On second thought, i don't want to train right now.;FRENCH;GERMAN;;SPANISH;;;;;;;;;x
+EVTTOOLTIPD_ES_110;You return to your cosy throne.;FRENCH;GERMAN;;SPANISH;;;;;;;;;x
+
+EVTDESC_ES_112_A;ENGLISH;FRENCH;GERMAN;;SPANISH;;;;;;;;;x
+EVTDESC_ES_112_B;ENGLISH;FRENCH;GERMAN;;SPANISH;;;;;;;;;x
+EVTOPT_ES_112;ENGLISH;FRENCH;GERMAN;;SPANISH;;;;;;;;;x
+
+EVTDESC_ES_113_A;ENGLISH;FRENCH;GERMAN;;SPANISH;;;;;;;;;x
+EVTDESC_ES_113_B;ENGLISH;FRENCH;GERMAN;;SPANISH;;;;;;;;;x
+EVTOPT_ES_113;ENGLISH;FRENCH;GERMAN;;SPANISH;;;;;;;;;x
+
+EVTDESC_ES_123_A;ENGLISH;FRENCH;GERMAN;;SPANISH;;;;;;;;;x
+EVTDESC_ES_123_B;ENGLISH;FRENCH;GERMAN;;SPANISH;;;;;;;;;x
+EVTOPT_ES_123;ENGLISH;FRENCH;GERMAN;;SPANISH;;;;;;;;;x
+
+EVTDESC_ES_124;ENGLISH;FRENCH;GERMAN;;SPANISH;;;;;;;;;x
+
+EVTDESC_ES_125_A;ENGLISH;FRENCH;GERMAN;;SPANISH;;;;;;;;;x
+EVTDESC_ES_125_B;ENGLISH;FRENCH;GERMAN;;SPANISH;;;;;;;;;x
+EVTOPT_ES_125;ENGLISH;FRENCH;GERMAN;;SPANISH;;;;;;;;;x
+
+EVTDESC_ES_126;ENGLISH;FRENCH;GERMAN;;SPANISH;;;;;;;;;x
+
+EVTDESC_ES_127;ENGLISH;FRENCH;GERMAN;;SPANISH;;;;;;;;;x
+EVTOPT_ES_127;ENGLISH;FRENCH;GERMAN;;SPANISH;;;;;;;;;x
+
+CODE;ENGLISH;FRENCH;GERMAN;;SPANISH;;;;;;;;;x
+CODE;ENGLISH;FRENCH;GERMAN;;SPANISH;;;;;;;;;x
+CODE;ENGLISH;FRENCH;GERMAN;;SPANISH;;;;;;;;;x
+
+# War Parade
+legion_of_mars_war_parade_desc;ENGLISH;FRENCH;GERMAN;;SPANISH;;;;;;;;;x
+
+# Train Battle Maneuver
+legion_of_mars_train_battle_maneuver_desc;ENGLISH;FRENCH;GERMAN;;SPANISH;;;;;;;;;x
+
+# Hire Legion
+legion_of_mars_hire_legion_desc;ENGLISH;FRENCH;GERMAN;;SPANISH;;;;;;;;;x
+
+# Fabricate Claim
+legion_of_mars_fabricate_claim_desc;ENGLISH;FRENCH;GERMAN;;SPANISH;;;;;;;;;x
+
+
+# Event Modifiers
+es_trained;Trained;FRENCH;GERMAN;;SPANISH;;;;;;;;;x
+es_war_parade;War Parade;FRENCH;GERMAN;;SPANISH;;;;;;;;;x
+
+# Single Empty Line at the end
