@@ -10,7 +10,8 @@ TBD
 ## Version Overview
 
 * 0.1 (May 2018, compatible with 2.8.2.1)
-** Initial submission of mod project
+	* Initial submission of mod project
+	* First version of 'Legion of Mars'
 
 ## Current and Future Societies
 Following you'll find a list of the societies which are currently playable, are in development or are planned for future releases. There are three categories of society which will be added through this mod. **Historical Societies** are societies which are at least reasonable believed to have existed in the Crusader Kings II timeframe (769 - 1453).  
