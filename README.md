@@ -34,7 +34,7 @@ Source: https://en.wikipedia.org/wiki/Thuggee
 #### (In Development) Legion of Mars
 >We, the followers of the **Legion of Mars**, hereby declare to uphold the roman traditions. Through power, discipline and military excelence we shall aid the Roman Empire to rise from its ashes and once again rule over the whole world!
 
-The Legion of Mars is an **open**, **non-criminal** society aiming to reinstall the Roman Empire. To be able to join the society you must be **between 16 and 45 years old**. Also, you either have to have **byzantine culture**, **be a vassal of the byzantine emperor** or **live near** the former capital of the Roman Empire, **Rome**. Your **martial** skills determine your reputation inside the Legion. Members of the society are able to **train**, **forge masterful weapons** and even **form valid claims to former Roman provinces**.
+The Legion of Mars is an **open**, **non-criminal** society aiming to reinstall the Roman Empire. To join the society you must be **between 16 and 45 years old**. Also, you either have to have **byzantine culture**, **be a vassal of the byzantine emperor** or **live near** the former capital of the Roman Empire, **Rome**. Your **martial** skills determine your reputation inside the Legion. Members of the society are able to **train**, **forge masterful weapons** and even **form valid claims to former Roman provinces**.
 
 #### (Planned) The Free Men
 
