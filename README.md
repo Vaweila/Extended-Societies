@@ -9,9 +9,7 @@ TBD
 
 ## Version Overview
 
-* 0.1 (May 2018, compatible with 2.8.2.1)
-	* Initial submission of mod project
-	* First version of 'Legion of Mars'
+No released version yet. Stay tuned
 
 ## Current and Future Societies
 Following you'll find a list of the societies which are currently playable, are in development or are planned for future releases. There are three categories of society which will be added through this mod. **Historical Societies** are societies which are at least reasonable believed to have existed in the Crusader Kings II timeframe (769 - 1453).  
@@ -34,7 +32,9 @@ Source: https://en.wikipedia.org/wiki/Thuggee
 **Extended Societies** do not have any historical background but will be, for most players, be thematically fitting enough to not disperse immersion while playing. They aim to bring the most possible fun to the game through new mechanics without outright making the game a mess.
 
 #### (In Development) Legion of Mars
-We, the followers of the **Legion of Mars**, hereby declare to do everything in our power to let the Roman Empire rise from it's ashes. We will uphold all roman traditions and always seek to excel at those. Our foremost goal is to dominate our opponents through power, leadership and military administration to let the empire once again shines in its glory.
+>We, the followers of the **Legion of Mars**, hereby declare to uphold the roman traditions. Through power, discipline and military excelence we shall aid the Roman Empire to rise from its ashes and once again rule over the whole world!
+
+The Legion of Mars is an **open**, **non-criminal** society aiming to reinstall the Roman Empire. To be able to join the society you must be **between 16 and 45 years old**. Also, you either have to have **byzantine culture**, **be a vassal of the byzantine emperor** or **live near** the former capital of the Roman Empire, **Rome**. Your **martial** skills determine your reputation inside the Legion. Members of the society are able to **train**, **forge masterful weapons** and even **form valid claims to former Roman provinces**.
 
 #### (Planned) The Free Men
 
